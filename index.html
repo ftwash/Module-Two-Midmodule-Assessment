@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css">
+    <title>🎲Welcome to the Dice Roller🎲 </title>
+  </head>
+  <body>
+    <h1 id = "top_heading">🎲Welcome to the Dice Roller🎲</h1>
+    <h2 id = "welcome_para">Welcome! Please enter the number of dice you'd like to use:</h2>
+
+    <input id="number-input" type="number" placeholder="Number of dice"><br><br>
+    <button onclick = "rollDice()" id="mirror-button" type="submit">Roll 'em</button>
+    
+    <script>
+
+        const rollDice = () =>{
+    
+          let numOfRolls = document.getElementById("number-input").value
+          let dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
+          for(i=0; i<numOfRolls; i++){
+            let randomRoll = dice[Math.floor(Math.random() * dice.length)]
+            //create a string containing all of the dice results 
+            let rollResult = 
+            let rollSum = 
+
+
+          }
+          let li = document.createElement("li")
+          li.innerText = `${rollResult} ${rollSum}`
+
+
+          //include a line that creates a new <li> element, adding to the history log
+          //each time the button is clicked
+    
+        }
+    </script>
+      
+      <!-- Build a website with the following user stories:
+
+      - As a user I can select how many dice I want to roll
+      - As a user, I can click a button to roll that many dice
+      - As a user, I can view the dice roll as well as its sum
+      - As a user, I can view the history of all of my previous rolls and their sums
+      
+      ## Testing notes:
+      
+      - Your history items should be `li` elements.
+      - Clicking the roll button the first time should not add anything to the history
+      - Subsequent clicks to the rolls button should add the previous roll to the history
+      - The only `li` elements should be your history dice rolls
+      - You should have exactly one `input` element where the number of dice can be entered
+      - You should have exactly one `button` element that the user can click on to roll the dice
+      - The die result from rolling should be stored in an element with the id "dice-para"
+      - The sum from rolling should be stored in an element with the id "sum-para"
+      - Use the follow HTML entity values for dice:
+       -->
+<h2>History</h2>
+
+
+  </body>
+</html>
+
+
+
+<!-- later steps:
+
+•create a box around the dice results and the history sections
+
+-->
