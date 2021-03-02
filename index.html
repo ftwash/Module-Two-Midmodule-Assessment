@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<!-- 
+  SMART goals for the hour of work on 3/2/2021:
+    1. get the first item on the checklist done (refactor my code so that I can 
+    store the value of the user input as a number and console log that value.)
+  
+    2. my stretch goal is:
+          be able to console.log a string of random dice that is the same 
+          length as the number input by the user. 
+  
+  
+  <!DOCTYPE html> -->
 <html>
   <head>
     <link rel="stylesheet" href="./index.css">
@@ -14,19 +24,23 @@
     <script>
 
         const rollDice = () =>{
+
+          let numOfRolls = Number(document.getElementById("number-input").value)
+
+
     
-          let numOfRolls = document.getElementById("number-input").value
-          let dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
-          for(i=0; i<numOfRolls; i++){
-            let randomRoll = dice[Math.floor(Math.random() * dice.length)]
-            //create a string containing all of the dice results 
-            let rollResult = 
-            let rollSum = 
+          // let dice = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
+          // for(i=0; i<numOfRolls; i++){
+          //   let randomRoll = dice[Math.floor(Math.random() * dice.length)]
+          //   //create a string containing all of the dice results 
+          //   // let rollResult = []
+          //   // let rollSum = []
 
 
-          }
-          let li = document.createElement("li")
-          li.innerText = `${rollResult} ${rollSum}`
+          // }
+          // let li = document.createElement("li")
+          // li.innerText = `${rollResult} ${rollSum}`
+          console.log(numOfRolls)
 
 
           //include a line that creates a new <li> element, adding to the history log
